@@ -1,0 +1,138 @@
+body {
+  background: #3b3b3b;
+  font-family: 'Bree Serif', serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.main-container, .input-container, .list-container,
+.item-text, .delete-button, .item {
+  display: flex;
+}
+
+.row {
+  width: 100%;
+}
+
+.flex-filler {
+  width: 10%;
+}
+
+.description-container, .list-container, .input-container {
+  width: 80%;
+}
+
+.main-container {
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.title-container {
+  height: auto;
+}
+
+.title, .description-container {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.description-text, .title {
+  color: white;
+}
+
+.description-text span {
+  color: #c31715;
+}
+
+#newItemInput {
+  width: calc(90% - 10px);
+  margin: 20px 10px 0 0;
+}
+
+#addItem {
+  width: 10%;
+  min-width: 60px;
+  height: 30px;
+  margin: 20px 0 0 0;
+  align-content: center;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #c31715;
+  background-color: white;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  font-weight: normal;
+}
+
+#addItem:hover{
+  background-color: grey;
+  color: black;
+}
+
+#itemList {
+  margin-top: 20px;
+}
+
+.item {
+  width: calc(100% - 4px);
+  height: 30px;
+  color: white;
+  text-transform: capitalize;
+  border: 2px solid darkred;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #d21d2f;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.item-text {
+  width: calc(100% - 50px);
+  margin: 3px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item:hover {
+  background: #aa1026;
+}
+
+#newItemInput {
+  border-radius: 5px;
+  min-width: 65%;
+  padding: 5px;
+  border: none;
+}
+
+.done {
+  background: #51DF70;
+  color: #00891E;
+  border-color: #00891E;
+}
+
+.done:hover {
+  background-color: #2cc343;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: darkred;
+  font-weight: 800;
+}
+
+.done .delete-button {
+  color: #00891E;
+}
+
+.delete {
+  display: none;
+}

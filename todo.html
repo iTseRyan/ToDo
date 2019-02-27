@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+
+    <!--CSS-->
+    <link rel="stylesheet"
+          type="text/css"
+          href="todo.css">
+    <!--FontAwesome Icons-->
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <!--Google Fonts "Bree Serif"-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif"
+          rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="title-container row">
+            <h1 class="title">Today's To-Do List</h1>
+        </div>
+
+        <!--Instructions-->
+        <div class="flex-filler"></div>
+        <div class="description-container">
+            <p class="description-text"><span>Step 1:</span> Type text into text-box below (32 character limit)</p>
+            <p class="description-text"><span>Step 2:</span> Click on the "+" button on the right or press enter</p>
+            <p class="description-text"><span>Step 3:</span> Mark items as complete by clicking on the item</p>
+            <p class="description-text"><span>Step 4:</span> Remove items by clicking on the "x"</p>
+        </div>
+        <div class="flex-filler"></div>
+
+        <!--User Input-->
+        <div class="flex-filler"></div>
+        <div class="input-container">
+            <!--Item Name-->
+            <input id="newItemInput" type="text" placeholder="What needs doing?" maxlength="32">
+            <!--Add Item-->
+            <button id="addItem"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="flex-filler"></div>
+
+        <!--To Do List-->
+        <div class="flex-filler"></div>
+        <div class="list-container">
+            <div class="row" id="itemList">
+            </div>
+        </div>
+        <div class="flex-filler"></div>
+
+    </div>
+
+    <!--Add JS file at the end to let html load first and page loads view faster-->
+    <script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
