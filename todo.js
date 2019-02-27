@@ -35,6 +35,10 @@ function createListElement() {
     }
     // Removes item from list
     function deleteListItem(){
+        // Deletes item from DOM
+        // newItem.parentNode.removeChild(newItem);
+
+        // Hides item
         newItem.classList.add('delete')
     }
 }
