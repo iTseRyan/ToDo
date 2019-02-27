@@ -8,3 +8,6 @@ A task tracking app in Javascript
 - Removing items from the DOM
 - Flex-box display styling
 - CSS styling
+
+# Demo
+https://itseryan.github.io/ToDo/
