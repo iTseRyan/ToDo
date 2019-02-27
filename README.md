@@ -1,5 +1,5 @@
 # ToDo
-A task tracking app in Javascript
+A task tracking app in JavaScript
 
 # Concepts Practiced
 - Adding elements into the DOM with JS
