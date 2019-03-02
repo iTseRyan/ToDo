@@ -6,8 +6,7 @@ body {
   margin: 0;
 }
 
-.main-container, .input-container, .list-container,
-.item-text, .delete-button, .item {
+body, .main-container, .input-container, .flex-filler, .item {
   display: flex;
 }
 
@@ -16,16 +15,19 @@ body {
 }
 
 .flex-filler {
-  width: 10%;
-}
-
-.description-container, .list-container, .input-container {
-  width: 80%;
+  min-width: 10%;
+  width: calc(50% - 350px);
 }
 
 .main-container {
-  height: auto;
+  margin-top: 5%;
   flex-wrap: wrap;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  max-width: 660px;
+  border: 2px solid white;
+  border-radius: 25px;
 }
 
 .title-container {
