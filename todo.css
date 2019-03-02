@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-body, .main-container, .input-container, .flex-filler, .item {
+.flex-content, .main-container, .input-container, .flex-filler, .item {
   display: flex;
 }
 
@@ -19,8 +19,8 @@ body, .main-container, .input-container, .flex-filler, .item {
   width: calc(50% - 350px);
 }
 
-.main-container {
-  margin-top: 5%;
+.flex-content {
+  margin-top: 2%;
   flex-wrap: wrap;
   padding: 20px;
   width: 80%;
@@ -28,6 +28,11 @@ body, .main-container, .input-container, .flex-filler, .item {
   max-width: 660px;
   border: 2px solid white;
   border-radius: 25px;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
 }
 
 .title-container {
